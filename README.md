@@ -9,13 +9,15 @@ An engaging, fast-paced two-player arcade game built on the Arduino Uno. This pr
 4. **False Starts:** If you press your button *before* the LED lights up, it's a false start, and your opponent automatically gets a point!
 5. **Winning:** The first player to reach 2 points wins the game. The display will show the winner (e.g., `P 1` or `P 2`).
 
-## 🛠️ Hardware Requirements
+## 🛠️ Requirements
 * 1x Arduino Uno
 * 1x 8-Digit 7-Segment Display Module (MAX7219)
 * 3x Push Buttons (Player 1, Player 2, Start/Reset)
 * 5x LEDs (1x Start signal, 4x Score indicators)
 * Resistors (for LEDs)
 * Breadboard and jumper wires
+* This project requires the **LedControl** library to drive the MAX7219 display. 
+You can install it directly via the Arduino IDE
 
 ## 🔌 Pin Configuration (Wiring)
 
@@ -43,13 +45,6 @@ An engaging, fast-paced two-player arcade game built on the Arduino Uno. This pr
 | CLK (Clock) | `Pin 10` |
 | VCC | `5V` |
 | GND | `GND` |
-
-## ⚙️ Software Dependencies
-This project requires the **LedControl** library to drive the MAX7219 display. 
-You can install it directly via the Arduino IDE Library Manager:
-1. Open Arduino IDE.
-2. Go to `Sketch` -> `Include Library` -> `Manage Libraries...`
-3. Search for **LedControl** and install it.
 
 ## 🚀 How to run
 1. Clone this repository or download the `.ino` file.
